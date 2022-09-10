@@ -96,7 +96,7 @@ const WordNotFound = () => {
         </OutsideAlerter>
       <div className={styles.notMessage}>
         <h3>ക്ഷമിക്കുക</h3>
-        <p>നിങ്ങള്‍ അന്വേഷിച്ച "{notfoundword}" എന്ന പദത്തിന്റെ അര്ത്ഥം കണ്ടെത്താനായില്ല. സാധ്യമെങ്കില്‍, ദയവായി നിഘണ്ടുവില്‍ ചേര്‍ക്കുക.</p>
+        <p>നിങ്ങള്‍ അന്വേഷിച്ച {notfoundword} എന്ന പദത്തിന്റെ അര്ത്ഥം കണ്ടെത്താനായില്ല. സാധ്യമെങ്കില്‍, ദയവായി നിഘണ്ടുവില്‍ ചേര്‍ക്കുക.</p>
         <button onClick={()=>router.push(`/add-new-word?notfoundword=${notfoundword}`)} >{notfoundword} നിഘണ്ടുവിൽ ചേർക്കുക </button>
       </div>
       </div>
