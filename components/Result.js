@@ -79,7 +79,8 @@ const hideCartHandler= () => setHoveredCart(-1)
             <form onSubmit={handleSearch}>
              <input onFocus={OnFocus} onChange={handleFilter} value={wordEntered} placeholder="Search Word" type="mobile"/>
             </form>
-            {isLoading ? <CircularProgress size="25px" style={{ color: "#808080"}}  /> : <SearchIcon style={{ color: "#808080"}} />}
+            {isLoading ? <div className="circularProgress" ><CircularProgress size="25px" style={{ color: "#808080"}}  /></div> 
+            : <div onClick={handleSearch} className="searchIcon" ><SearchIcon style={{ color: "#808080"}} /></div>}
            </div>
            {filteredData.length > 0 && focused===true ? 
           

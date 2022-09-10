@@ -58,7 +58,8 @@ const MainSearch = ({data}) => {
             <form onSubmit={handleSearch}>
              <input onFocus={OnFocus} onChange={handleFilter} value={wordEntered} placeholder='Search Word' type="mobile" />
             </form>
-            {isLoading ? <CircularProgress size="25px" style={{ color: "#808080"}}  /> : <SearchIcon style={{ color: "#808080"}} />}
+            {isLoading ? <div className={styles.circularProgress} ><CircularProgress size="25px" style={{ color: "#808080"}}  /></div> 
+            :<div className={styles.searchIcon} onClick={handleSearch} ><SearchIcon style={{ color: "#808080"}} /></div>}
           </div>
           {filteredData.length > 0 && focused===true ? 
           

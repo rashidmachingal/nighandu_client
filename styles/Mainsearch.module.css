@@ -45,7 +45,6 @@
   align-items: center;
   background: white;
   border-radius: 6px;
-  padding-right: 8px;
 }
 
 .homeSearch form{
@@ -61,6 +60,24 @@
   font-weight: 500;
   padding-left: 6px;
   background: none;
+}
+
+.searchIcon{
+  height: 100%;
+  width: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.circularProgress{
+  height: 100%;
+  width: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
 /* Home Add New Word */

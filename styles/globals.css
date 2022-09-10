@@ -31,7 +31,6 @@
   background: white;
   border-radius: 6px;
   padding-left: 8px;
-  padding-right: 8px;
 }
 
 .mainSearch input{
@@ -48,6 +47,24 @@
 
 .mainSearch  form{
   width: 100%;
+}
+
+.searchIcon{
+  height: 100%;
+  width: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.circularProgress{
+  height: 100%;
+  width: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
 /* Serch Suggetion */
