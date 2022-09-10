@@ -1,0 +1,42 @@
+.footerContainer {
+    width: 100vw;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footerBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+  }
+
+  .footerBox p{
+    font-family: Georgia, 'Times New Roman', Times, serif !important;
+  }
+  
+  .footerBox a {
+    text-decoration: none;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif !important;
+  }
+
+  .footerLinks{
+    display: flex;
+    gap: 0.4rem;
+    font-size: 14px;
+  }
+  
+  .socialIcons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+  }
+  
+  .footerContainer span {
+    font-weight: 600;
+  }

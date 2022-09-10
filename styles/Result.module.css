@@ -1,0 +1,240 @@
+.resultContainer {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+/* Search Suggetion */
+
+.resultSearchSuggetion{
+  position: fixed;
+  margin-top: 4.1rem;
+  width: 24rem;
+  height: auto;
+  background: white;
+  box-shadow: 0px 0px 5px 1px #00000026;
+  border-radius: 6px;
+  z-index: 3;
+}
+
+.resultSearchSuggetion li{
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  padding-left: 6px;
+}
+
+.resultSearchSuggetion li:hover{
+  background: rgba(205, 205, 205, 0.736);
+  cursor: pointer;
+}
+
+
+/* Result Title   */
+
+.resultTitle {
+  margin-top: 1rem;
+}
+
+.resultTitle p {
+  font-size: 16px;;
+  text-transform: lowercase;
+}
+
+.resultTitle span {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+/* Result Items */
+
+.resultMeaning {
+  width: 100%;
+  padding-left: 1rem;
+  margin-top: 1rem;;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.resultItems {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0.4rem;
+}
+
+.resultItems li{
+  list-style: none;
+}
+
+.resultItems li span:first-child{
+  font-weight: 800;
+}
+
+.resultItems li i{
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.364);
+  font-size: 13.5px;
+  font-style: italic;
+}
+
+/* Result Add Edit */
+
+.resultAddEdit{
+  margin-top: 1.3rem;
+  padding-left: 0.6rem;
+  width: 100%;
+  display: flex;
+  gap: 0.5rem;
+  padding-bottom: 1rem;
+}
+
+.resultAddEdit button:hover{
+  cursor: pointer;
+}
+
+/* Add New Meaning */
+
+.addNewContainer{
+  width: 100vw;
+  position: fixed;
+  bottom:0%;
+  display: flex;
+  justify-content: center;
+  z-index: 3;
+}
+.addNewBox{
+  width: 36rem;
+  height: 21rem;
+  background: rgb(240, 240, 240);
+  border: 0.1px solid rgba(0, 0, 0, 0.42);
+  border-radius: 8px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  position: relative;
+}
+
+.addNewClose{
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  cursor: pointer;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(134, 134, 134, 0.375);
+}
+
+.addNewClose:hover{
+  background: rgba(134, 134, 134, 0.639);
+}
+
+.addNewTitle{
+  text-align: center;
+  margin-top: 0.4rem;;
+}
+
+.addNewTitle h4{
+  font-weight: 400;
+}
+
+.addNewTitle span{
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+/* Add New Form */
+
+.addNewForm{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.addNewFormGroup{
+  width: 80%;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.addNewFormGroup div{
+  margin-top: 0.4rem;
+  width: 100%;
+  height: 2.3rem;
+  background: white;
+  box-shadow: 0 0 2px rgba(117, 113, 113, 0.539);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  cursor: not-allowed;
+}
+
+.addNewFormGroup input{
+  margin-top: 0.4rem;
+  width: 100%;
+  height: 2.3rem;
+  background: white;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  outline: none;
+  border: none;
+}
+
+.addNewFormGroup select{
+  margin-top: 0.4rem;
+  width: 100%;
+  height: 2.3rem;
+  background: white;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  outline: none;
+  border: none;
+}
+
+.addNewFormGroup button{
+  width: 100%;
+  height: 2.3rem;
+  border: none;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.825);
+  color: white;
+}
+
+.addNewFormGroup span{
+  color: red;
+  font-size: 14px;
+  margin-top: 0.6px;
+}
+
+.addNewFormGroup button:hover{
+  background: rgba(0, 0, 0, 0.751);
+}
+
+/* Responsive Design */
+
+@media (max-width: 680px) {
+  .addNewBox{
+   width: 96%; 
+  }
+  .addNewTitle h4{
+    font-size: 15px;
+  }
+}
+@media (max-width:408px) {
+  .addNewClose{
+    top: 20px;
+  }
+}

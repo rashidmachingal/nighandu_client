@@ -1,0 +1,24 @@
+.notContainer{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+/* Not Box */
+
+.notBox{
+    gap: 1rem;
+}
+
+/* Not Message   */
+
+.notMessage{
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+}
+
+.notMessage button{
+  margin-top: 1rem;
+  cursor: pointer;
+}
+

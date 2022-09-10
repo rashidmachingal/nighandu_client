@@ -1,0 +1,39 @@
+.contentContainer {
+  margin-top: 1rem;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 4rem;
+}
+
+.contentBox {
+  width: 46rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+.contentBox a{
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.829);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.contentHeading h1{
+    font-weight: 600;
+    font-size: 27px;
+}
+
+
+/* Responsive Design */
+
+@media (max-width:680px) {
+  .contentBox{
+    width: 96%;
+    height: 100%;
+  }
+}
